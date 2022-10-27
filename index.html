@@ -3,28 +3,8 @@
 
 <head lang="en">
   <meta charset="UTF-8">
-   <title>
-	Approval Letter
-</title>
+  <title>Approval Letter</title>
 
-<script language="JavaScript">
-    function showInput() {
-        document.getElementById('display').innerHTML = 
-                    document.getElementById("name").value;
-		document.getElementById('display1').innerHTML =			
-					document.getElementById("loanamount").value;
-		document.getElementById('display2').innerHTML =
-					document.getElementById("year").value;
-		document.getElementById('display3').innerHTML =			
-					document.getElementById("emi").value;
-		document.getElementById('display4').innerHTML =			
-					document.getElementById("fee").value;
-		document.getElementById('display5').innerHTML =			
-					document.getElementById("loanamount").value;
-		document.getElementById('display6').innerHTML =			
-					document.getElementById("fee").value;
-    }
-  </script>
   
 </head>
 <body>
@@ -32,23 +12,28 @@
     
 	<form>
 	<label><b>Name</b></label>
-    <input type="text" name="message" id="name">
+    <input type="text" id="name">
+    
 	<label><b>Loan Amount</b></label>
-    <input type="text" name="message" id="loanamount">
+    <input type="text" id="loanamount">
+    
 	<label><b>Year</b></label>
-    <input type="text" name="message" id="year">
+    <input type="text" id="year"><br>
+    
 	<label><b>EMI</b></label>
-    <input type="text" name="message" id="emi">
+    <input type="text" id="emi">
+    
 	<label><b>PROCESSING FEE</b></label>
-    <input type="text" name="message" id="fee">
+	
+    <input type="text" id="fee">
 </form>
        <input type="submit" onclick="showInput();"><br/><br>
+       
 	   <div>
         
         <p style="height:100%; width:100%; background-image: url('letter.jpg'); background-repeat: no-repeat; font-family: 'Roboto Slab', serif; font-weight: 500; font-size: 22px;">
 <br /><br /><br /><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            Date:- <span contenteditable> 05/10</span>/2022            
-            <br />
+            Date:- <span id="date"></span>    <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Name: <span id='display'>Label</span><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -59,7 +44,7 @@ Loan Amount:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Subject: Approval For The Personal Loan<br /><br />
  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
- Dear sir,<br />
+ Dear Sir,<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 We are sending you this letter to confirm your loan has been approved<br />
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -83,15 +68,13 @@ Loan processing charge:- <span id='display6'>Label</span><br /><br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note:- Cash deposit not accepted by company (Online transaction needed<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                   for IMPS/NEFT/RTGS/MOBILE BANKING your Bank Account/Transition<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; verification).
 
- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            
-            <br />
+ <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 </p>
 
-
-    
-    </div>
+</div>
+   
+  <script src="main.js"></script>
     
 </body>
 
